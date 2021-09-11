@@ -1,6 +1,7 @@
 Feature: Login Feature
   Verify if user is able to Login in to the site
 
+	@SmokeTest @RegressionTest 
   Scenario Outline: Login as a authenticated user
     Given user is on login page
     When I enter Username as "<username>" and Password as "<password>"
@@ -10,6 +11,7 @@ Feature: Login Feature
     |username|password|
     |standard_user|secret_sauce|
     
+	@SmokeTest @RegressionTest 
   Scenario: Login as a user who is locked out
     Given user is on login page
     When I enter Username as "<username>" and Password as "<password>"
@@ -19,7 +21,7 @@ Feature: Login Feature
     |username|password|
     |locked_out_user|secret_sauce|
     
-    
+	@SmokeTest @RegressionTest    
   Scenario: Login as a authenticated user and logout
     Given user is on login page
     When I enter Username as "<username>" and Password as "<password>"

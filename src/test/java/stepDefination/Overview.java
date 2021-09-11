@@ -16,6 +16,12 @@ public class Overview {
 		Hooks.driver.findElement(By.id("finish")).click();
 	}
 
+	@When("Click on product title from overview page")
+	public void Click_product_title_from_overview_page() {
+		Hooks.driver.findElement(By.xpath("//*[@class='inventory_item_name' and text()='"+Product.strProductTitle+"']")).click();
+	}
+	
+		
 	@Then("Order confirmation page should be displayed")
 	public void order_confirmation_page_should_be_displayed() {
 		System.out.println( Hooks.driver.findElement(By.xpath("//*[@class='complete-header']")).getText());

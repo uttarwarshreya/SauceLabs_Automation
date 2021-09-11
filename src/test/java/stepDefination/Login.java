@@ -1,17 +1,14 @@
 package stepDefination;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import io.cucumber.java.After;
 import io.cucumber.java.en.*;
 
 public class Login {
+
 	@Given("user is on login page")
 	public void user_is_on_login_page() {
-
+		assert Hooks.driver.findElement(By.id("user-name")).isDisplayed() == true;
 	}
 
 	@When("^I enter Username as \"([^\"]*)\" and Password as \"([^\"]*)\"$")
@@ -51,7 +48,7 @@ public class Login {
 	@When("click on Logout")
 	public void click_on_logout() {
 		Hooks.driver.findElement(By.id("logout_sidebar_link")).click();
-		
+
 	}
 
 	@Then("user login page should displayed")

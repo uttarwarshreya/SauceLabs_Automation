@@ -1,6 +1,7 @@
 Feature: Your Information
   Verify different options from your information page
     
+    @RegressionTest 
     Scenario: Verify that your cart page displayed after clicking on cancel
     Given user is on login page
     When I enter Username as "standard_user" and Password as "secret_sauce"
@@ -11,6 +12,7 @@ Feature: Your Information
     And Click on cancel button from your information page
     Then Verify your cart page displayed
     
+    @SmokeTest @RegressionTest 
     Scenario: Verify error for mandatory field gets displayed
     Given user is on login page
     When I enter Username as "standard_user" and Password as "secret_sauce"
@@ -21,6 +23,7 @@ Feature: Your Information
     And Click on continue button from your information page
     Then Error message to capture user information should be displayed
     
+    @SmokeTest @RegressionTest 
     Scenario: Verify that overview page displayed after clicking checkout
     Given user is on login page
     When I enter Username as "standard_user" and Password as "secret_sauce"
