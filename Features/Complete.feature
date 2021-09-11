@@ -1,6 +1,7 @@
 Feature: Complete
   Verify Complete page and its options
     
+    @SmokeTest @RegressionTest 
     Scenario: Verify product page gets displayed when click on back home button
     Given user is on login page
     When I enter Username as "standard_user" and Password as "secret_sauce"

@@ -1,7 +1,6 @@
 package stepDefination;
 
 import org.openqa.selenium.By;
-
 import io.cucumber.java.en.*;
 
 public class Product {
@@ -15,19 +14,19 @@ public class Product {
 		strPropertyValue = "add-to-cart-"+strTempPropertyValue;
 		Hooks.driver.findElement(By.id(strPropertyValue)).click();
 	}
-	
+
 	@When ("Click on remove button")
 	public void Click_remove_button() {
 		strPropertyValue = "remove-"+strTempPropertyValue;
 		Hooks.driver.findElement(By.id(strPropertyValue)).click();
 	}
-	
+
 	@When ("^Click on \"([^\"]*)\" product title$")
 	public void Click_product_title(String strProduct) {
 		strProductTitle = strProduct;
 		Hooks.driver.findElement(By.xpath("//*[@class='inventory_item_name' and text()='"+strProduct+"']")).click();
 	}
-	
+
 	@When ("Click on Back to products")
 	public void Click_back_to_products() {
 		Hooks.driver.findElement(By.id("back-to-products")).click();
@@ -38,22 +37,22 @@ public class Product {
 		Hooks.driver.findElement(By.id("shopping_cart_container")).click();
 		assert Hooks.driver.findElement(By.xpath("//*[@class='inventory_item_name' and text()='"+strProductTitle+"']")).isDisplayed() == true;
 	}
-	
+
 	@Then("Verify product removed from the cart")
 	public void Verify_product_removed_from_cart() {
 		Hooks.driver.findElement(By.id("shopping_cart_container")).click();
 		try {
 			Hooks.driver.findElement(By.xpath("//*[@class='inventory_item_name' and text()='"+strProductTitle+"']")).isDisplayed()	;
-			assert true==false;
+			assert true == false;
 		}catch (Exception e){
-			assert true==true;
+			assert true == true;
 		}
-		 
+
 	}
 
 	@Then("Verify product details page is displayed")
 	public void verify_product_details_page_is_displayed() {
-	    assert Hooks.driver.findElement(By.id("back-to-products")).isDisplayed() == true;
+		assert Hooks.driver.findElement(By.id("back-to-products")).isDisplayed() == true;
 	}
 
 	@Then("Verify product matches with the product selected")

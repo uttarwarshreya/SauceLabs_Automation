@@ -1,6 +1,7 @@
 Feature: Products
   Verify if products are displayed and users can perform different actions
-
+		
+		@SmokeTest @RegressionTest 
     Scenario: Verify product can be added to cart from products page
     Given user is on login page
     When I enter Username as "standard_user" and Password as "secret_sauce"
@@ -8,6 +9,7 @@ Feature: Products
     And Click on Add to cart for the product "Sauce Labs Backpack"
     Then Verify product added to cart
     
+    @RegressionTest 
     Scenario: Remove product from cart by clicking remove from product page
     Given user is on login page
     When I enter Username as "standard_user" and Password as "secret_sauce"
@@ -16,6 +18,7 @@ Feature: Products
     And Click on remove button
     Then Verify product removed from the cart
     
+    @SmokeTest @RegressionTest 
     Scenario: Verify products details page displays when clicked on a product
     Given user is on login page
     When I enter Username as "standard_user" and Password as "secret_sauce"
@@ -24,6 +27,7 @@ Feature: Products
     Then Verify product details page is displayed
     And Verify product matches with the product selected
     
+    @RegressionTest 
     Scenario: Verify products can be added from product details page
     Given user is on login page
     When I enter Username as "standard_user" and Password as "secret_sauce"
@@ -32,6 +36,7 @@ Feature: Products
     And Click on Add to cart for the product "Sauce Labs Backpack"
     And Verify product added to cart
     
+    @RegressionTest 
     Scenario: Verify products page displays when clicked on Back to products
     Given user is on login page
     When I enter Username as "standard_user" and Password as "secret_sauce"
