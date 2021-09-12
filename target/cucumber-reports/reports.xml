@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="19" time="78.177">
-    <testcase classname="Complete" name="Verify product page gets displayed when click on back home button" time="7.161">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="19" time="72.512">
+    <testcase classname="Complete" name="Verify product page gets displayed when click on back home button" time="7.124">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When I enter Username as "standard_user" and Password as "secret_sauce".....passed
@@ -16,7 +16,7 @@ Then Verify product page is displayed.......................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login Feature" name="Login as a authenticated user" time="2.981">
+    <testcase classname="Login Feature" name="Login as a authenticated user" time="2.91">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When I enter Username as "standard_user" and Password as "secret_sauce".....passed
@@ -25,7 +25,7 @@ Then Verify product page is displayed.......................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login Feature" name="Login as a user who is locked out" time="2.846">
+    <testcase classname="Login Feature" name="Login as a user who is locked out" time="2.952">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When I enter Username as "locked_out_user" and Password as "secret_sauce"...passed
@@ -34,7 +34,7 @@ Then user locked out message should display.................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login Feature" name="Login as a authenticated user and logout" time="3.379">
+    <testcase classname="Login Feature" name="Login as a authenticated user and logout" time="3.145">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When I enter Username as "standard_user" and Password as "secret_sauce".....passed
@@ -45,7 +45,7 @@ Then user login page should displayed.......................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Overview" name="Verify the information displayed on overview page" time="4.304">
+    <testcase classname="Overview" name="Verify the information displayed on overview page" time="3.974">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When I enter Username as "standard_user" and Password as "secret_sauce".....passed
@@ -59,7 +59,7 @@ Then Verify the details like product, payment information, Shipping information,
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Overview" name="Click cancel on Checkout page and it should navigate to Your information page" time="5.023">
+    <testcase classname="Overview" name="Click cancel on Checkout page and it should navigate to Your information page" time="4.583">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When I enter Username as "standard_user" and Password as "secret_sauce".....passed
@@ -74,7 +74,7 @@ Then Verify product page is displayed.......................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Overview" name="Click finish on Checkout page and verify order placed succesfully" time="4.924">
+    <testcase classname="Overview" name="Click finish on Checkout page and verify order placed succesfully" time="3.913">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When I enter Username as "standard_user" and Password as "secret_sauce".....passed
@@ -89,7 +89,7 @@ Then Order confirmation page should be displayed............................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Overview" name="Verify the product details page displayed when clicked on product from overview page" time="4.996">
+    <testcase classname="Overview" name="Verify the product details page displayed when clicked on product from overview page" time="4.666">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When I enter Username as "standard_user" and Password as "secret_sauce".....passed
@@ -104,7 +104,7 @@ Then Verify product details page is displayed...............................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Products" name="Verify product can be added to cart from products page" time="3.173">
+    <testcase classname="Products" name="Verify product can be added to cart from products page" time="2.742">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When I enter Username as "standard_user" and Password as "secret_sauce".....passed
@@ -114,7 +114,7 @@ Then Verify product added to cart...........................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Products" name="Remove product from cart by clicking remove from product page" time="3.573">
+    <testcase classname="Products" name="Remove product from cart by clicking remove from product page" time="3.39">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When I enter Username as "standard_user" and Password as "secret_sauce".....passed
@@ -125,7 +125,7 @@ Then Verify product removed from the cart...................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Products" name="Verify products details page displays when clicked on a product" time="3.591">
+    <testcase classname="Products" name="Verify products details page displays when clicked on a product" time="2.931">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When I enter Username as "standard_user" and Password as "secret_sauce".....passed
@@ -136,7 +136,7 @@ And Verify product matches with the product selected........................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Products" name="Verify products can be added from product details page" time="3.632">
+    <testcase classname="Products" name="Verify products can be added from product details page" time="3.482">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When I enter Username as "standard_user" and Password as "secret_sauce".....passed
@@ -147,7 +147,7 @@ And Verify product added to cart............................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Products" name="Verify products page displays when clicked on Back to products" time="4.253">
+    <testcase classname="Products" name="Verify products page displays when clicked on Back to products" time="3.925">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When I enter Username as "standard_user" and Password as "secret_sauce".....passed
@@ -159,7 +159,7 @@ And Verify product page is displayed........................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Your Cart" name="Verify product can be removed from cart page" time="3.618">
+    <testcase classname="Your Cart" name="Verify product can be removed from cart page" time="3.438">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When I enter Username as "standard_user" and Password as "secret_sauce".....passed
@@ -171,7 +171,7 @@ Then Verify product removed from the cart...................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Your Cart" name="Verify that product page displayed after clicking on continue shopping" time="4.15">
+    <testcase classname="Your Cart" name="Verify that product page displayed after clicking on continue shopping" time="4.335">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When I enter Username as "standard_user" and Password as "secret_sauce".....passed
@@ -183,7 +183,7 @@ Then Verify product page is displayed.......................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Your Cart" name="Verify checkout page displayed after clicking on checkout page" time="3.701">
+    <testcase classname="Your Cart" name="Verify checkout page displayed after clicking on checkout page" time="3.593">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When I enter Username as "standard_user" and Password as "secret_sauce".....passed
@@ -195,7 +195,7 @@ Then Verify checkout user information page displayed........................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Your Information" name="Verify that your cart page displayed after clicking on cancel" time="3.796">
+    <testcase classname="Your Information" name="Verify that your cart page displayed after clicking on cancel" time="3.538">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When I enter Username as "standard_user" and Password as "secret_sauce".....passed
@@ -208,7 +208,7 @@ Then Verify your cart page displayed........................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Your Information" name="Verify error for mandatory field gets displayed" time="4.275">
+    <testcase classname="Your Information" name="Verify error for mandatory field gets displayed" time="3.64">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When I enter Username as "standard_user" and Password as "secret_sauce".....passed
@@ -221,7 +221,7 @@ Then Error message to capture user information should be displayed..........pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Your Information" name="Verify that overview page displayed after clicking checkout" time="4.514">
+    <testcase classname="Your Information" name="Verify that overview page displayed after clicking checkout" time="3.932">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When I enter Username as "standard_user" and Password as "secret_sauce".....passed

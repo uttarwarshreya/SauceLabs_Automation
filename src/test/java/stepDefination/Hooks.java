@@ -13,12 +13,15 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Hooks {
 
 	public static WebDriver driver = null;
+	ElementProperties eleProp;
 	@Before
 	public void beforeScenario(){
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.saucedemo.com/");
+		
+		eleProp = new ElementProperties(driver);
 	}	
 
 	@AfterStep

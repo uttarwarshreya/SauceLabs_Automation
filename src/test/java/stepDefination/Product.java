@@ -7,6 +7,8 @@ public class Product {
 	String strPropertyValue = null;
 	String strTempPropertyValue = null;
 	public static String strProductTitle = null;
+	
+	
 	@When ("^Click on Add to cart for the product \"([^\"]*)\"$")
 	public void Add_product_to_cart(String strProduct) {
 		strProductTitle = strProduct;
@@ -29,7 +31,7 @@ public class Product {
 
 	@When ("Click on Back to products")
 	public void Click_back_to_products() {
-		Hooks.driver.findElement(By.id("back-to-products")).click();
+		Hooks.driver.findElement(ElementProperties.backToProducts).click();
 	}
 
 	@Then("Verify product added to cart")
@@ -52,11 +54,11 @@ public class Product {
 
 	@Then("Verify product details page is displayed")
 	public void verify_product_details_page_is_displayed() {
-		assert Hooks.driver.findElement(By.id("back-to-products")).isDisplayed() == true;
+		assert Hooks.driver.findElement(ElementProperties.backToProducts).isDisplayed() == true;
 	}
 
 	@Then("Verify product matches with the product selected")
 	public void Verify_product_title() {
-		assert Hooks.driver.findElement(By.xpath("//*[@class='inventory_details_name large_size']")).getText().equalsIgnoreCase(strProductTitle) == true;
+		assert Hooks.driver.findElement(ElementProperties.inventoryDetailsName).getText().equalsIgnoreCase(strProductTitle) == true;
 	}
 }
